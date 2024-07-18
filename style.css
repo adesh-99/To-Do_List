@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
- 
-.container{
-    height: 100vh;
+
+.container {
+    height: 100%;
     width: 100%;
-    margin: 0;
     padding: 10px;
     background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.todo-app{
+.todo-app {
     width: 100%;
     max-width: 540px;
     margin: 100px auto 50px;
@@ -23,16 +25,13 @@
     margin-bottom: 20px;
 }
 
-.todo-app h2{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    font-weight: 20px;
-    font-family: sans-serif;
+.todo-app h2 {
     font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +41,7 @@
     margin-bottom: 15px;
 }
 
-input{
+input {
     flex: 1;
     border: none;
     outline: none;
@@ -51,10 +50,10 @@ input{
     font-size: 16px;
 }
 
-button{
+button {
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 30px; 
     background: #ff5945;
     color: #fff;
     font-size: 16px;
@@ -62,34 +61,56 @@ button{
     border-radius: 30px;
 }
 
-ul li{
-    list-style: none;
-    font-size: 26px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
+ul {
+    padding: 0;
 }
 
-.checked{
+ul li {
+    position: relative;
+    font-size: 22px; 
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
 
-ul li span{
+ul li span {
     position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 26px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
     color: #000000;
     text-align: center;
-    line-height: 45px;
+    line-height: 30px;
     border-radius: 50%;
 }
 
-ul li span:hover{
+ul li span:hover {
     background: #d8dfeb;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-app {
+        padding: 20px;
+    }
     
+    .row {
+        padding-left: 10px;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    ul li {
+        font-size: 18px;
+    }
 }
