@@ -22,19 +22,21 @@
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .todo-app h2 {
     margin-bottom: 20px;
     font-size: 35px;
-    text-align: center; /* Center align the heading */
+    text-align: center; 
 }
 
 .row {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    background: #d8dfeb;
+    border-radius: 5px 0 0 5px; 
 }
 
 input {
@@ -44,7 +46,7 @@ input {
     background: transparent;
     padding: 10px;
     font-size: 16px;
-    border-radius: 5px 0 0 5px; /* Rounded left corners */
+    border-radius: 5px 0 0 5px; 
 }
 
 button {
@@ -55,7 +57,7 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 0 5px 5px 0; /* Rounded right corners */
+    border-radius: 0 5px 5px 0;
 }
 
 ul {
@@ -71,7 +73,7 @@ ul li {
     position: relative;
     border-radius: 5px;
     margin-bottom: 10px;
-    background-color: #d8dfeb; /* Light background color */
+    background-color: #d8dfeb; 
 }
 
 ul li.checked {
@@ -91,7 +93,7 @@ ul li span {
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
-    background-color: #ddd; /* Light gray background for delete button */
+    background-color: #ddd; 
     cursor: pointer;
 }
 
@@ -107,11 +109,13 @@ ul li span {
     input {
         padding: 10px;
         font-size: 14px;
+        border-radius: 50%;
     }
 
     button {
         padding: 10px 20px;
         font-size: 14px;
+        border-radius: 50%;
     }
 
     ul li {
